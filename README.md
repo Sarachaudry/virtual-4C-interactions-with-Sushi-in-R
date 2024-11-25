@@ -28,7 +28,7 @@ bedtools intersect -wa \
 
 join bait_bins with the matrix. Separately with bin1 (columns 1-5)(to retrieve partners_bin2) and with bin2 (column 9-10) (to retrieve partners_bin1), then concatenate and sort
 
-#### YOU CAN FIND INTERACTIONS WITH OTHER BAITS (M, other E, etc.. ) by changing the bins (111685 and 111706).
+#### CAN FIND INTERACTIONS WITH OTHER BAITS (M, other E, etc.. ) by changing the bins (111685 and 111706).
 
 time cat RT_10000_iced.RT1.RT2.matrix | \
 awk '{if (($1 >= 111685) && ($1 <=111706) || ($6 >= 111685) && ($6 <=111706) ) print $0 }' > RT_class_E_segement_10kb.target.matrix
