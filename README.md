@@ -3,7 +3,7 @@ plotting virtual 4C interactions with Sushi in R
 
 plotgardener
 
-grep E_segment RT_class_ALL_10kb.bed > RT_class_E_segment_10kb.bed
+grep E_segment path-to-RT-file > RT_class_E_segment_10kb.bed
 
 
 #######################################################################################
@@ -13,7 +13,7 @@ grep E_segment RT_class_ALL_10kb.bed > RT_class_E_segment_10kb.bed
 
 bedtools intersect -wa \
 -b <( grep -v scaf_ RT_class_E_segment_10kb.bed ) \
--a <( grep -v scaf_ RT_10000_abs.bed ) > RT_class_E_segment_10kb.bins.bed
+-a <( grep -v scaf_ path-to-10kb-bed-file ) > RT_class_E_segment_10kb.bins.bed
 
 #######################################################################################
 
